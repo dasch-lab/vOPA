@@ -1,0 +1,64 @@
+# osx noise
+*.DS_Store
+profile
+
+# Ignore env variables and secret keys
+.env
+
+
+# Keep only the .keep file
+
+src/saved_checkpoints/*
+!src/saved_checkpoints/06Feb23_15_8_all_densenet_1e3/confusion_matrix_best_model.png
+
+src/images/*
+!src/images/.keep
+
+src/metadata/*
+!src/metadata/plates_*
+!src/metadata/raw_*
+
+src/metadata/plates_metadata/*
+!src/metadata/plates_metadata/.keep
+src/metadata/raw_protocols/*
+!src/metadata/raw_protocols/.keep
+
+src/saved_checkpoints/*
+!src/saved_checkpoints/.keep
+
+src/saved_plots/*
+!src/saved_plots/.keep
+
+src/tensor_dataset/*
+!src/tensor_dataset/.keep
+
+src/scripts/test*
+
+#############
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+# pip-log.txt
+# pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+#test/
+test_output/
+
